@@ -309,6 +309,15 @@ footer {
 
 
 // trying something here:
+// table border:
+table, th, td{
+  border-collapse: collapse;
+  border-spacing: 0;
+  border:1px solid $lightGray;
+  color: lightgray
+}
+
+
 // Scrollbars
 html {
   --scrollbarBG: black;
@@ -353,9 +362,7 @@ td > code {
 pre code {
   display: block;
   color: black;
-  overflow: auto;
   font-size: inherit;
-  
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
