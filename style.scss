@@ -18,10 +18,10 @@ html {
 }
 
 body {
-  background: $white;
+  background: $darkGray;
   font-family: 'Lato', sans-serif;
   font-family: 'Lato', sans-serif;
-  color: $darkGray;
+  color: #bedee2;
   line-height: 1.5;
   font-size: large;
 }
@@ -34,8 +34,8 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Lato', sans-serif;
-  color: $darkerGray;
+  font-family: 'Lucida Handwriting', cursive;
+  color: #ffa49a;
   font-weight: bold;
 
   line-height: 1.5;
@@ -64,7 +64,7 @@ h3 {
 
 h4 {
   font-size: 18px;
-  color: $gray;
+  color: $blue;
 }
 
 p {
@@ -72,11 +72,11 @@ p {
 }
 
 a {
-  color: $blue;
+  color: #00CED1;
   text-decoration: none;
 	cursor: pointer;
   &:hover, &:active {
-    color: $blue;
+    color: #0000FF;
   }
 }
 
@@ -125,12 +125,12 @@ img {
 
 // Specify the color of the selection
 ::-moz-selection {
-  color: $black;
-  background: $lightGray;
+  color: $white;
+  background: #0000FF;
 }
 ::selection {
-  color: $black;
-  background: $lightGray;
+  color: $white;
+  background: #0000FF;
 }
 
 // Nicolas Gallagher's micro clearfix hack
@@ -195,17 +195,17 @@ img {
 
 .site-name {
   margin: 0;
-  color: $darkGray;
+  color: #FA8072;
   cursor: pointer;
-  font-family: $helveticaNeue;
+  font-family: 'Lucida Handwriting', cursive;;
   font-weight: 300;
-  font-size: 28px;
+  font-size: 30px;
   letter-spacing: 1px;
 }
 
 .site-description {
   margin: -5px 0 0 0;
-  color: $gray;
+  color: $lightGray;
   font-size: 16px;
 
   @include mobile {
@@ -228,14 +228,14 @@ nav {
 
   a {
     margin-left: 20px;
-    color: $darkGray;
+    color: $gray;
     text-align: right;
     font-weight: 300;
     letter-spacing: 1px;
 
     @include mobile {
       margin: 0 10px;
-      color: $blue;
+      color: #0000FF;
     }
   }
 }
@@ -246,7 +246,7 @@ nav {
 
 .posts > .post {
   padding-bottom: 2em;
-  border-bottom: 1px solid $lightGray;
+  border-bottom: 1px solid rgb(77, 77, 77);
 }
 
 .posts > .post:last-child {
@@ -288,7 +288,7 @@ footer {
 
 .got-help {
   border-radius: 20px;
-  border: 5px solid $baby-blue;
+  border: 5px solid #00BFFF;
   background-color: $baby-blue-30;
   padding-left: 10px;
   padding-right: 10px;
@@ -304,6 +304,58 @@ footer {
   padding-right: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+
+
+// trying something here:
+// Scrollbars
+html {
+  --scrollbarBG: black;
+  --thumbBG: #bedee2;
+  height: 100%;
+}
+body::-webkit-scrollbar {
+  width: 11px;
+}
+body {
+  border-left: 11px solid black;
+  min-height: 100%;
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+body::-webkit-scrollbar-track {
+  background: var(--scrollbarBG);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG) ;
+  border-radius: 6px;
+  border: 3px solid var(--scrollbarBG);
+}
+
+
+/* Code in text */
+p > code,
+li > code,
+dd > code,
+td > code {
+  background: #bedee2;
+  color: black;
+  word-wrap: break-word;
+  box-decoration-break: clone;
+  padding: .1rem .3rem .2rem;
+  border-radius: .2rem;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+// code block
+pre code {
+  display: block;
+  color: black;
+  overflow: auto;
+  font-size: inherit;
+  
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
