@@ -309,15 +309,6 @@ footer {
 
 
 // trying something here:
-// table border:
-table, th, td{
-  border-collapse: collapse;
-  border-spacing: 0;
-  border:1px solid $lightGray;
-  color: lightgray
-}
-
-
 // Scrollbars
 html {
   --scrollbarBG: black;
@@ -343,6 +334,60 @@ body::-webkit-scrollbar-thumb {
 }
 
 
+
+// table for dataframe
+table.dataframe {
+  width: 100%;
+  height: 240px;
+  display: block;
+  overflow: auto;
+  font-family: inherit;
+  font-size: 13px;
+  line-height: 20px;
+  text-align: center;
+}
+table.dataframe th {
+font-weight: bold;
+padding: 4px;
+}
+table.dataframe td {
+padding: 4px;
+}
+table.dataframe tr:hover {
+background: #0000FF; 
+}
+
+// scrollbar for dataframe
+table.dataframe html {
+  --scrollbarBG: black;
+  --thumbBG: #bedee2;
+  height: 100%;
+}
+table.dataframe::-webkit-scrollbar {
+  height: 11px;
+  width: 11px;
+  // border: 1px solid $black
+}
+table.dataframe::-webkit-scrollbar-track {
+  background: var(--scrollbarBG);
+}
+table.dataframe::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG) ;
+  border-radius: 6px;
+  border: 3px solid var(--scrollbarBG);
+}
+
+
+// table border: table, th, td
+table{
+  color: lightgray
+}
+tbody tr {
+  border-top: 1pt solid #bedee2
+}
+
+
+
 /* Code in text */
 p > code,
 li > code,
@@ -364,6 +409,7 @@ pre code {
   color: black;
   font-size: inherit;
 }
+
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
