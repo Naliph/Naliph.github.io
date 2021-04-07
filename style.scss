@@ -115,6 +115,7 @@ strong, b {
 
 img {
   max-width: 100%;
+  background: white;
 }
 
 // Fixes images in popup boxes from Google Translate
@@ -410,6 +411,7 @@ pre code {
   color: black;
   font-size: inherit;
 }
+
 
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
