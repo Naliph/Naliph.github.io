@@ -14,6 +14,9 @@ avatar: https://cdn4.iconfinder.com/data/icons/chubby-cat-emoticons-bzzricon-fil
 #
 # Flags below are optional
 #
+navbar-links:
+  About Me: "about"
+  
 
 # Includes an icon in the footer for each username you enter
 footer-links:
@@ -25,7 +28,7 @@ footer-links:
   instagram:
   linkedin: alicepham98
   pinterest:
-  rss: rss # just type anything here for a working RSS icon
+  rss: just a virtual proof for my skills # just type anything here for a working RSS icon
   twitter: 
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
@@ -47,11 +50,31 @@ url: http://Naliph.github.io
 # (http://yourusername.github.io/repository-name)
 # and NOT your User repository (http://yourusername.github.io)
 # then add in the baseurl here, like this: "/repository-name"
-baseurl: ""
+baseurl: "Naliph.github.io"
+
+
+
+# Add stuff:
+navbar-col: "#EAEAEA"
+navbar-text-col: "#404040"
+navbar-border-col: "#DDDDDD"
+page-col: "#FFFFFF"
+text-col: "#404040"
+link-col: "#008AFF"
+hover-col: "#0085A1"
+footer-col: "#EAEAEA"
+footer-text-col: "#777777"
+footer-link-col: "#404040"
+
+
+
+
+
 
 #
 # !! You don't need to change any of the configuration flags below !!
 #
+
 
 permalink: /:title/
 
