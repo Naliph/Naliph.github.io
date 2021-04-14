@@ -4,8 +4,14 @@ title: About
 permalink: /about/
 ---
 
+
 Hi, my name is Alice, a Biochemistry UCLA student. This blog is created for homework purposes for my PIC 16B course; which is Python focuses on scientific computation and data science.
 
+![profile_picture](/images/profile-pic.png)
+
+
+
+### Education:
 
 
 ### Contact me
