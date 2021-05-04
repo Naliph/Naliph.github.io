@@ -39,7 +39,6 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'lato', sans-serif;
   color: #F77669;
-  // #ffa49a too cute too pastel lol
   font-weight: bold;
 
   line-height: 1.5;
@@ -116,6 +115,7 @@ strong, b {
 img {
   max-width: 100%;
   background: white;
+  
 }
 
 // Fixes images in popup boxes from Google Translate
@@ -362,11 +362,6 @@ background: #0000FF;
 }
 
 // scrollbar for dataframe
-table.dataframe html {
-  --scrollbarBG: black;
-  --thumbBG: #bedee2;
-  height: 100%;
-}
 table.dataframe::-webkit-scrollbar {
   height: 11px;
   width: 11px;
@@ -397,22 +392,25 @@ p > code,
 li > code,
 dd > code,
 td > code {
-  background: #bedee2;
-  color: black;
+  // background: #bedee280;
+  // color: black;
+  background: RGB(50,50,50);
+  color: #80CBC4;
+
   word-wrap: break-word;
   box-decoration-break: clone;
   padding: .1rem .3rem .2rem;
   border-radius: .2rem;
   font-family: inherit;
   font-size: inherit;
+
 }
 
 // code block
 pre code {
-  display: block;
-  color: black;
   font-size: inherit;
 }
+
 
 
 
