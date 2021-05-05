@@ -24,7 +24,7 @@ body {
   color: rgba(233, 237, 237, 1);
   
   line-height: 1.5;
-  font-size: medium;
+  font-size: 14px;
 }
 
 .container {
@@ -51,7 +51,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 30px;
   a {
     color: inherit;
   }
@@ -264,7 +264,7 @@ nav {
     border-left: 2px solid $lightGray;
     padding: 0.1em 1em;
     color: $lightGray;
-    font-size: 22px;
+    font-size: 18px;
     font-style: italic;
   }
 
@@ -346,7 +346,7 @@ table.dataframe {
   display: block;
   overflow: auto;
   font-family: inherit;
-  font-size: 13px;
+  font-size: 12px;
   line-height: 20px;
   text-align: center;
 }
