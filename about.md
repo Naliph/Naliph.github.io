@@ -11,7 +11,7 @@ Hi, my name is Alice, a Biochemistry UCLA student. This blog is created for home
 
 
 
-### Education:
+
 
 
 ### Contact me
